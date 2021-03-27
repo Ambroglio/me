@@ -9,10 +9,10 @@ export const light_theme = {
         },
         primary: {
             main: "#f0878b",
-            contrastText: "#fff"
+            contrastText: "#ffffff"
         },
         text: {
-            primary: "#000"
+            primary: "#000000"
         }
     }
 }
@@ -25,10 +25,10 @@ export const dark_theme = {
         },
         primary: {
             main: "#5588dd",
-            contrastText: '#fff',
+            contrastText: '#ffffff',
         },
         text: {
-            primary: "#fff"
+            primary: "#ffffff"
         }
     },
 }

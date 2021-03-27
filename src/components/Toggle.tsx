@@ -15,18 +15,13 @@ const WhiteSwitch = withStyles((theme: Theme) => ({
             color: theme.palette.text.primary,
             backgroundColor: theme.palette.text.primary,
         },
-        '&$checked + $hover': {
+        "&:hover": {
             color: theme.palette.text.primary,
-            backgroundColor: theme.palette.text.primary,
-        },
-        '&$hover': {
-            color: theme.palette.text.primary,
-            backgroundColor: theme.palette.text.primary,
-        },
+            backgroundColor: `${theme.palette.text.primary}11 !important`,
+        }
     },
     checked: {},
     track: {},
-    hover: {}
 }))(Switch);
 
 export default function Toggle() {
