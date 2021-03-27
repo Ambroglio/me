@@ -1,26 +1,42 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {MeThemeContext, MeThemeProvider} from "./context/MeThemeProvider";
+import {
+    createMuiTheme, CssBaseline,
+    ThemeProvider,
+} from '@material-ui/core';
+import {light_theme, dark_theme} from "./config/themes";
+import {BrowserRouter as Router, Switch, Route, Redirect} from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import ProjectsPage from "./pages/ProjectsPage";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <MeThemeProvider>
+            <MeThemeContext.Consumer>{
+                theme => {
+                    let muiTheme = createMuiTheme(light_theme);
+                    if (theme.theme === "dark") {
+                        muiTheme = createMuiTheme(dark_theme);
+                    }
+
+                    return (
+                        <ThemeProvider theme={muiTheme}>
+                            <CssBaseline/>
+                            <Router>
+                                <Switch>
+                                    <Route exact path={"/"}><HomePage/></Route>
+                                    <Route exact path={"/projects"}><ProjectsPage/></Route>
+                                    <Route path={"/**"}><Redirect to={"/"}/></Route>
+                                </Switch>
+                            </Router>
+                        </ThemeProvider>
+                    )
+                }
+            }
+            </MeThemeContext.Consumer>
+        </MeThemeProvider>
+    );
 }
 
 export default App;
