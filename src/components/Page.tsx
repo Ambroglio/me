@@ -1,9 +1,13 @@
 import React, {ReactNode} from "react"
 import Header from "./Header";
-import {Box, Container, makeStyles, Theme, Typography} from "@material-ui/core";
+import {Box, Container, makeStyles, Theme} from "@material-ui/core";
+import Title from "./typos/Title";
+import Border from "./Border";
+import Detail from "./typos/Detail";
 
 type Props = {
     title: string,
+    subtitle? : string
     children: ReactNode
 }
 
@@ -13,7 +17,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     }
 }));
 
-export default function Page({title, children} : Props) {
+export default function Page({title, subtitle, children} : Props) {
     const classes = useStyles()
 
     return (
@@ -22,9 +26,15 @@ export default function Page({title, children} : Props) {
 
             <Container className={classes.root}>
                 <Box>
-                    <Typography variant={"h5"}>
+                    <Title>
                         {title}
-                    </Typography>
+                    </Title>
+                    {subtitle &&
+                    <Detail>
+                        {subtitle}
+                    </Detail>
+                    }
+                    <Border />
                 </Box>
                 <Box>
                     {children}

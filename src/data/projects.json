@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "Personal website, Me",
+    "short_description": "I coded my personal website.",
+    "description": "This website was made in order to present myself and the different projects I made throughout the years.",
+    "creation_year": 2021,
+    "end_year": 2021,
+    "type": "Personal",
+    "tags": [
+      "React",
+      "Material UI",
+      "Typescript"
+    ],
+    "img_url": "me_project_image.jpg",
+    "github_link": "https://github.com/Ambroglio/me"
+  },
+  {
+    "id": 2,
+    "name": "Dev House",
+    "short_description": "Dev House, your next job awaits you !",
+    "description": "Dev House is a job platform allowing IT professionals to create job offers, setting these different offers on a map. These offers are displayed using a specific matching algorithm.",
+    "creation_year": 2021,
+    "end_year": 2021,
+    "type": "Team",
+    "tags": [
+      "React",
+      "Material UI",
+      "Typescript",
+      "Redux",
+      "OCaml",
+      "Kotlin",
+      "Spring-Boot"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Kliko",
+    "short_description": "Kliko, sell your products now !",
+    "description": "Kliko is a local marketplace for city centers, such as Lille's city center. A vendor can register himself to the platform and create products. A customer can click & collect some different products, and he will have a map to go to the different shops.",
+    "creation_year": 2020,
+    "end_year": 2021,
+    "type": "Team",
+    "tags": [
+      "React",
+      "Material UI",
+      "Typescript",
+      "Redux",
+      "Java",
+      "Spring-Boot"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "ABB Repository",
+    "short_description": "An ABB repository",
+    "description": "In Enterprise Architecture, an ABB represents the future of a digital product, its target. I created a small repository to help architects creating, updating and deleting their ABBs for the company Adeo.",
+    "creation_year": 2020,
+    "end_year": 2020,
+    "type": "Internal",
+    "tags": [
+      "React",
+      "Bootstrap",
+      "Express.js",
+      "Postgresql"
+    ]
+  }
+]

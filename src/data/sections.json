@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "order": 1,
+    "name": "Education"
+  },
+  {
+    "id": 2,
+    "order": 2,
+    "name": "Professional experience"
+  },
+  {
+    "id": 3,
+    "order": 3,
+    "name": "Personal and academic projects"
+  },
+  {
+    "id": 4,
+    "order": 4,
+    "name": "Languages"
+  },
+  {
+    "id": 5,
+    "order": 5,
+    "name": "Programming skills"
+  },
+  {
+    "id": 6,
+    "order": 6,
+    "name": "Interests, hobbies, sport"
+  }
+]

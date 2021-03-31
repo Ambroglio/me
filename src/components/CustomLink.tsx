@@ -1,5 +1,5 @@
 import {Link} from "react-router-dom";
-import {makeStyles, Theme, Typography} from "@material-ui/core";
+import {makeStyles, Theme} from "@material-ui/core";
 import React from "react";
 
 interface Props {

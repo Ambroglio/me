@@ -1,8 +1,7 @@
 import React, {useEffect, useState} from "react";
-import {Button, Icon, IconButton, makeStyles, StyleRules, Theme, Toolbar, Typography} from "@material-ui/core";
+import {Button, IconButton, makeStyles, StyleRules, Theme, Toolbar, Typography} from "@material-ui/core";
 import {AppBar} from "@material-ui/core";
 import Toggle from "./Toggle";
-import {Link} from "react-router-dom";
 import CustomLink from "./CustomLink";
 import me_circle from "../images/me_circle.png"
 import linkedin_logo from "../images/linkedin_logo.png"
@@ -11,6 +10,8 @@ import {openUrl} from "../utils/Listeners";
 import {Email, Menu} from "@material-ui/icons";
 import {GITHUB_URL, GMAIL_URL, LINKEDIN_URL} from "../config/url_variables";
 import {DESKTOP_MIN_WIDTH, MEDIA_RULE_FOR_MOBILE} from "../config/responsive_variables";
+import {grey} from "@material-ui/core/colors";
+import clsx from "clsx";
 
 const useStyles = makeStyles((theme: Theme) => {
     const styles: StyleRules = {
@@ -79,6 +80,9 @@ const useStyles = makeStyles((theme: Theme) => {
             textAlign: "center",
             justifyContent: "center",
             alignItems: "center"
+        },
+        githubIcon: {
+
         }
     }
 
@@ -100,6 +104,14 @@ const useStyles = makeStyles((theme: Theme) => {
         flexFlow: "column"
     }
 
+    if (theme.palette.type === "dark") {
+        // @ts-ignore
+        styles["smallIconContainer"]["backgroundColor"] = "white"
+        // @ts-ignore
+        styles["smallIconContainer"]["&:hover"] = {}
+        // @ts-ignore
+        styles["smallIconContainer"]["&:hover"]["backgroundColor"] = grey[300]
+    }
 
     return styles
 });
@@ -123,14 +135,12 @@ export default function Header() {
         window.addEventListener("resize", () => setResponsiveness());
     }, []);
 
-    console.log(mobileView)
-
     return (
         <div className={classes.root}>
             <AppBar position={"static"}>
                 <Toolbar className={classes.background}>
                     <div id={"globalPresentation"} className={classes.globalPresentation}>
-                        <img src={me_circle} alt={"Photo of Ambroise Mullie, cropped as a circle."}
+                        <img src={me_circle} alt={"Ambroise Mullie, cropped as a circle."}
                              className={classes.image}/>
                         <div className={classes.presentation}>
                             <CustomLink to={"/"}>
@@ -142,11 +152,11 @@ export default function Header() {
                                 </Typography>
                                 <IconButton className={classes.smallIconContainer}
                                             onClick={(e) => openUrl(LINKEDIN_URL)}>
-                                    <img src={linkedin_logo} className={classes.smallIcon}/>
+                                    <img src={linkedin_logo} className={classes.smallIcon} alt={"LinkedIn logo"}/>
                                 </IconButton>
-                                <IconButton className={classes.smallIconContainer}
+                                <IconButton className={clsx(classes.smallIconContainer,classes.githubIcon)}
                                             onClick={(e) => openUrl(GITHUB_URL)}>
-                                    <img src={github_logo} className={classes.smallIcon}/>
+                                    <img src={github_logo} className={classes.smallIcon} alt={"Github logo"}/>
                                 </IconButton>
                                 <IconButton className={classes.smallIconContainer}
                                             onClick={(e) => openUrl(GMAIL_URL)}>
