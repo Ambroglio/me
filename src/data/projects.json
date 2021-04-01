@@ -64,5 +64,17 @@
       "Express.js",
       "Postgresql"
     ]
+  },
+  {
+    "id": 5,
+    "name": "Sudoku Solver",
+    "short_description": "A sudoku solver",
+    "description": "I did a small sudoku solver in Python, with a graphical interface, to train my programming recursive skills.",
+    "creation_year": 2018,
+    "end_year": 2018,
+    "type": "Personal",
+    "tags": [
+      "Python"
+    ]
   }
 ]

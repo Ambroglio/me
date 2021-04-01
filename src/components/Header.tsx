@@ -1,5 +1,15 @@
 import React, {useEffect, useState} from "react";
-import {Button, IconButton, makeStyles, StyleRules, Theme, Toolbar, Typography} from "@material-ui/core";
+import {
+    Accordion, AccordionDetails,
+    AccordionSummary,
+    Button,
+    IconButton,
+    makeStyles,
+    StyleRules,
+    Theme,
+    Toolbar,
+    Typography
+} from "@material-ui/core";
 import {AppBar} from "@material-ui/core";
 import Toggle from "./Toggle";
 import CustomLink from "./CustomLink";
@@ -81,8 +91,15 @@ const useStyles = makeStyles((theme: Theme) => {
             justifyContent: "center",
             alignItems: "center"
         },
-        githubIcon: {
-
+        githubIcon: {},
+        accordion: {
+            width: "100%",
+            display: "flex",
+            flexFlow: "column",
+            justifyContent: "center",
+            alignItems: "center",
+            boxShadow: "none",
+            background: theme.palette.background.default
         }
     }
 
@@ -120,10 +137,9 @@ export default function Header() {
     const classes = useStyles();
 
     const [state, setState] = useState({
-        mobileView: false,
-        openLinks: false
+        mobileView: false
     })
-    const {mobileView, openLinks} = state;
+    const {mobileView} = state;
 
     useEffect(() => {
         const setResponsiveness = () => {
@@ -154,7 +170,7 @@ export default function Header() {
                                             onClick={(e) => openUrl(LINKEDIN_URL)}>
                                     <img src={linkedin_logo} className={classes.smallIcon} alt={"LinkedIn logo"}/>
                                 </IconButton>
-                                <IconButton className={clsx(classes.smallIconContainer,classes.githubIcon)}
+                                <IconButton className={clsx(classes.smallIconContainer, classes.githubIcon)}
                                             onClick={(e) => openUrl(GITHUB_URL)}>
                                     <img src={github_logo} className={classes.smallIcon} alt={"Github logo"}/>
                                 </IconButton>
@@ -166,24 +182,25 @@ export default function Header() {
                         </div>
                         {mobileView &&
                         <div id={"globalLinks"}>
-                            <IconButton onClick={(e) => setState({...state, openLinks: !(openLinks)})}>
-                                <Menu/>
-                            </IconButton>
-                            {openLinks &&
-                            <div id={"links"} className={classes.horizontalLinks}>
-                                <Button color="default">
-                                    <CustomLink to={"/"}>
-                                        Who am I ?
-                                    </CustomLink>
-                                </Button>
-                                <Button color="default">
-                                    <CustomLink to={"/projects"}>
-                                        Projects
-                                    </CustomLink>
-                                </Button>
-                                <Toggle/>
-                            </div>
-                            }
+                            <Accordion className={classes.accordion}>
+                                <AccordionSummary expandIcon={<Menu />}>
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                    <div id={"links"} className={classes.horizontalLinks}>
+                                        <Button color="default">
+                                            <CustomLink to={"/"}>
+                                                Who am I ?
+                                            </CustomLink>
+                                        </Button>
+                                        <Button color="default">
+                                            <CustomLink to={"/projects"}>
+                                                Projects
+                                            </CustomLink>
+                                        </Button>
+                                        <Toggle/>
+                                    </div>
+                                </AccordionDetails>
+                            </Accordion>
                         </div>
                         }
                     </div>

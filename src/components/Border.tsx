@@ -1,5 +1,6 @@
 import React from "react";
 import {makeStyles, Theme} from "@material-ui/core";
+import clsx from "clsx";
 
 const useStyles = makeStyles((theme: Theme) => ({
     root: {
@@ -11,12 +12,14 @@ const useStyles = makeStyles((theme: Theme) => ({
     }
 }));
 
-export default function Border() {
+type Props = {
+    className?: string
+}
+
+export default function Border({className} : Props) {
     const classes = useStyles();
 
     return (
-        <div className={classes.root}>
-
-        </div>
+        <div className={clsx(classes.root, className)}></div>
     )
 }

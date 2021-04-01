@@ -19,5 +19,46 @@ export type ProjectType = {
 export type SectionType = {
     id: number,
     order: number,
-    name: string
+    name: string,
+    parts: Array<PartType>
+}
+
+export type PartTypeFieldType =
+    | "common"
+    | "link"
+    | "table"
+
+export type PartType = {
+    type: string,
+    data:
+        | CommonDataType
+        | LinkDataType
+        | TableDataType
+}
+
+export type CommonDataType = {
+    name: string,
+    city?: string,
+    description: string
+    startingDate?: string,
+    endDate?: string,
+    details: Array<string>
+}
+
+export type LinkDataType = {
+    link: string,
+    linkName: string
+}
+
+export type TableDataType = {
+    description: string,
+    content: Array<
+        {
+            title: string,
+            body1: string,
+            body2?: string,
+            number?: number,
+            numberText?: string
+        }
+    >
 }
