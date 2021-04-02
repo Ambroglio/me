@@ -5,11 +5,17 @@ import PresentationLayer from "../components/PresentationLayer";
 import {makeStyles, Typography} from "@material-ui/core";
 import Border from "../components/Border";
 import {MEDIA_RULE_FOR_MOBILE} from "../config/responsive_variables";
+import {openUrl} from "../utils/Listeners";
+import {GMAIL_URL, LINKEDIN_URL} from "../config/url_variables";
 
 const useStyles = makeStyles((theme) => {
     const styles = {
         color: {
             color: theme.palette.primary.main
+        },
+        link: {
+            color: theme.palette.primary.main,
+            cursor: "pointer",
         },
         text: {}
     }
@@ -41,6 +47,7 @@ export default function HomePage() {
             <br/>
             <Typography variant={"body1"} className={classes.text}>
                 If you're interested in my profile, feel free to contact me !
+                Send me an <span className={classes.link} onClick={(e) => openUrl(GMAIL_URL)}>email</span>, or contact me via <span className={classes.link} onClick={(e) => openUrl(LINKEDIN_URL)}>LinkedIn</span>.
             </Typography>
             <Border/>
             <PresentationLayer sections={sections}/>

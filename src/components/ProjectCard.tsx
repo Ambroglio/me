@@ -61,7 +61,7 @@ export default function ProjectCard({project}: Props) {
             <div className={classes.cardMediaContainer}>
                 <CardMedia
                     className={classes.media}
-                    image={"/static/projects/me_project_image.jpg"}
+                    image={`/static/projects/${project.img_url}`}
                 />
             </div>
             }

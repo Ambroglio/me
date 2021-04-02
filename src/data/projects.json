@@ -31,7 +31,9 @@
       "OCaml",
       "Kotlin",
       "Spring-Boot"
-    ]
+    ],
+    "img_url": "devHouse_project_image.jpg",
+    "github_link": "https://github.com/Ambroglio/dev_house"
   },
   {
     "id": 3,
@@ -67,14 +69,15 @@
   },
   {
     "id": 5,
-    "name": "Sudoku Solver",
-    "short_description": "A sudoku solver",
-    "description": "I did a small sudoku solver in Python, with a graphical interface, to train my programming recursive skills.",
+    "name": "Amazed Mazes",
+    "short_description": "A perfect Mazes solver",
+    "description": "I made a small perfect mazes solver in Python, with a graphical interface, to train my programming recursive skills.",
     "creation_year": 2018,
     "end_year": 2018,
     "type": "Personal",
     "tags": [
       "Python"
-    ]
+    ],
+    "github_link": "https://github.com/Ambroglio/amazed_mazes"
   }
 ]
