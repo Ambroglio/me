@@ -24,4 +24,4 @@ You will also see any lint errors in the console.
 
 ### Project's photos
 
-A photo of a project has a 16:6 format.
+A photo of a project has a 8:3 format.
