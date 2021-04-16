@@ -1,5 +1,20 @@
 [
   {
+    "id": 0,
+    "name": "Document Helper, Template script on Google Docs",
+    "short_description": "A small script to create new Google Docs documents from an already created template.",
+    "description": "I've always been tired of not being capable of registering a document as a template in Google Docs, and to reuse it after. So I decided to make a little script, generating new documents from an already created document. However, I haven't been able to publish it, because I don't currently possess a domain.",
+    "creation_year": 2021,
+    "end_year": 2021,
+    "type": "Personal",
+    "tags": [
+      "Google Apps Script",
+      "JavaScript"
+    ],
+    "img_url": "document_helper_project_image.jpg",
+    "github_link": "https://github.com/Ambroglio/Document_Helper"
+  },
+  {
     "id": 1,
     "name": "Personal website, Me",
     "short_description": "I coded my personal website.",
