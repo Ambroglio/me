@@ -49,7 +49,7 @@ const useStyles = makeStyles((theme: Theme) => {
 export default function ProjectCard({project}: Props) {
     const classes = useStyles()
 
-    let subheader = `Launched in ${project.creation_year}, finished in ${project.end_year}`
+    let subheader = `Started in ${project.creation_year}, finished in ${project.end_year}`
 
     if (project.creation_year === project.end_year) {
         subheader = `Made in ${project.creation_year}`

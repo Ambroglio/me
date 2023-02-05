@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "order": 1,
+    "order": 2,
     "name": "Education",
     "parts": [
       {
@@ -13,8 +13,8 @@
           "startingDate": "2019",
           "endDate": "2021",
           "details": [
-            "IS urbanism",
-            "IS architecture",
+            "Information Service urbanism",
+            "Information Service architecture",
             "Projects management",
             "Object Design",
             "Database (MondoDB, Postgresql)",
@@ -31,7 +31,7 @@
           "startingDate": "2017",
           "endDate": "2019",
           "details": [
-            "IS urbanism",
+            "Information Service urbanism",
             "Database (SQL procedures)",
             "Accounting basics",
             "Object-oriented programming (Java)"
@@ -53,9 +53,48 @@
   },
   {
     "id": 2,
-    "order": 2,
+    "order": 1,
     "name": "Professional experience",
     "parts": [
+      {
+        "type": "common",
+        "data": {
+          "name": "Consultant - Full stack developer, Acensi Canada",
+          "city": "Montréal, Québec, Canada",
+          "description": "Full stack developer as a consultant for Acensi Canada. My current mission is at Desjardins, working as a backend engineer.",
+          "startingDate": "Since November 2022"
+        }
+      },
+      {
+        "type": "common",
+        "data": {
+          "name": "Backend developer, Desjardins",
+          "city": "Montréal, Québec, Canada",
+          "description": "Backend developer at Desjardins, working as a consultant for Acensi Canada. I am working on the modernisation of the “Prise de Rendez Vous” service, allowing clients or employees to make an appointment with an advisor",
+          "startingDate": "Since November 2022",
+          "details": [
+            "Worked on a batch service extracting appointment data in order to make some intel for the financial service",
+            "Worked on the APIs creating the appointments",
+            "Technologies used: Java, SpringBoot Framework, Splunk"
+          ]
+        }
+      },
+      {
+        "type": "common",
+        "data": {
+          "name": "Full stack developer, Attraqt",
+          "city": "Paris, France",
+          "description": "Full Stack developer at Attraqt, working on an AI powered recommendation service for E-commerce merchants on both the algorithms, the API microservices and the front",
+          "startingDate": "November 2021",
+          "endDate": "November 2022",
+          "details": [
+            "Created an internal UI for the customer success managers to onboard their customer easily",
+            "Worked on catalogue daily import jobs, with a focus on performance and speed",
+            "Worked on an API sorting products on their colour proximity with another one",
+            "Technologies used: Kotlin, Kotlin coroutines, ReactJs, Protobuf, Terraform, Github Actions"
+          ]
+        }
+      },
       {
         "type": "common",
         "data": {
@@ -65,9 +104,9 @@
           "startingDate": "September 2019",
           "endDate": "September 2021",
           "details": [
-            "Work on the IS to harmonise the installation services (installation of a water heater for example) for the marketplace in Italy, to have the same processes than France’s marketplace",
+            "Work on the Information Service to harmonise the installation services (installation of a water heater for example) for the marketplace in Italy, to have the same processes than France’s marketplace",
             "Conception and creation of an internal repository for the architecture team",
-            "Softwares and technologies used : Draw.io, Miro, Outils GSuite, ExpressJs, ReactJs, GCP"
+            "Softwares and technologies used : Draw.io, Miro, GSuite Tools, ExpressJs, ReactJs, GCP"
           ]
         }
       },
@@ -96,42 +135,45 @@
         "type": "link",
         "data": {
           "link": "/projects",
-          "linkName": "See the entire list of my projects now !"
+          "linkName": "See the entire list of my projects"
         }
       }
     ]
   },
   {
     "id": 4,
-    "order": 4,
+    "order": 5,
     "name": "Languages",
     "parts": [
       {
         "type": "table",
         "data": {
-          "description": "The different languages I speak.",
+          "description": "The different languages I speak. As you may see, I love learning new languages, not just in IT.",
           "content": [
             {
               "title": "French",
-              "body1": "Native"
+              "body1": "Native",
+              "body2": "Born and raised in France."
             },
             {
               "title": "English",
-              "body1": "Fluent"
+              "body1": "Fluent",
+              "body2": "When I was little, I used to go to London a lot. I live in Cana, so I also have the opportunity to practice daily. I also passed the TOEIC with a score of 950 over 990."
             },
             {
               "title": "Spanish",
               "body1": "Professional",
-              "body2": "I have a good understanding of written Spanish. I read El País weekly in 2019 to improve and be more aware of the country's political and economic situation."
+              "body2": "I have a good understanding of written Spanish. I read El País weekly in 2019 to improve and be more aware of the country's political and economic situation. I also spoke Spanish during the entire month of August 2021, doing the Camino de Santiago."
             },
             {
               "title": "Korean",
-              "body1": "Notions",
-              "body2": "I started learning Korean during my last year at high school. The Korean alphabet and grammar are quite easy to understand, but it's still hard to understand Koreans when they're talking !"
+              "body1": "Basics",
+              "body2": "I started learning Korean during my last year at high school, in 2017. The Korean alphabet and grammar are quite easy to understand, but it is still hard to understand Koreans when they are talking! However, I could make myself quite understood when I went to (South) Korea for a month in September 2022."
             },
             {
-              "title": "German",
-              "body1": "Notions"
+              "title": "Italian, Dutch, German",
+              "body1": "Notions",
+              "body2": "Interest in these languages, but I don't have much time and opportunity to practice, sadly."
             }
           ]
         }
@@ -140,7 +182,7 @@
   },
   {
     "id": 5,
-    "order": 5,
+    "order": 4,
     "name": "Programming skills",
     "parts": [
       {
@@ -152,7 +194,7 @@
               "title": "Java",
               "body1": "Advanced",
               "body2": "I really like Java because it's well conceived and it's quite easy to model anything with this language. I did a lot with this language, from coding small plugins with an interface to creating backends with the Spring-Boot framework.",
-              "number": 3,
+              "number": 4,
               "numberText": "years coding in Java"
             },
             {
@@ -165,14 +207,14 @@
             {
               "title": "Kotlin",
               "body1": "Good",
-              "number": 1,
+              "number": 1.5,
               "numberText": "year coding in Kotlin",
               "body2": "Augmented Java is great ! Very useful to create mobile applications, I also enjoyed doing some Spring-Boot REST backends with this language."
             },
             {
-              "title": "React (and Redux)",
+              "title": "React (and a bit of Redux)",
               "body1": "Good",
-              "number": 3,
+              "number": 4,
               "numberText": "years coding in JavaScript",
               "body2": "I always loved JavaScript but I really enjoy the React framework, with Redux and Material UI, in order to make beautiful frontends in the blink of an eye. Components reusability and single page architecture bring a great flow to web applications."
             }
@@ -190,11 +232,17 @@
         "type": "common",
         "data": {
           "name": "Fencing",
-          "city": "Mouvaux, France",
-          "description": "Pratice of foil during 10 years.",
-          "details": [
-
-          ]
+          "city": "Mouvaux, France and Paris, France",
+          "description": "Pratice of foil during 11 years.",
+          "details": []
+        }
+      }, 
+      {
+        "type": "common",
+        "data": {
+          "name": "Improvisational theatre and theatre",
+          "city": "Wambrechies, France",
+          "description": "Practice of improvisational theatre during 15 years and theatre during 10 years"
         }
       }
     ]

@@ -13,7 +13,7 @@ import {
 import {AppBar} from "@material-ui/core";
 import Toggle from "./Toggle";
 import CustomLink from "./CustomLink";
-import me_circle from "../images/me_circle.png"
+import profile_image from "../images/me_updated.jpg"
 import linkedin_logo from "../images/linkedin_logo.png"
 import github_logo from "../images/github_logo.svg"
 import {openUrl} from "../utils/Listeners";
@@ -156,7 +156,7 @@ export default function Header() {
             <AppBar position={"static"}>
                 <Toolbar className={classes.background}>
                     <div id={"globalPresentation"} className={classes.globalPresentation}>
-                        <img src={me_circle} alt={"Ambroise Mullie, cropped as a circle."}
+                        <img src={profile_image} alt={"Ambroise Mullie, cropped as a circle."}
                              className={classes.image}/>
                         <div className={classes.presentation}>
                             <CustomLink to={"/"}>
