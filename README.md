@@ -23,7 +23,7 @@ The different projects I made and a little presentation of me will be available 
 - Run `npm build`
 - Install firebase CLI if not done yet by running `npm install -g firebase-tools`
 - Deploy with `firebase deploy`
-- :rocket: :rocket: rocket:
+- :rocket: :rocket: :rocket:
 
 
 ## Misc
