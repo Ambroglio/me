@@ -13,7 +13,7 @@ The different projects I made and a little presentation of me will be available 
 
 ## How to run locally
 
-- Set up a `NODE_BIRTH_DATE` in a `.env` or `.env.local`
+- Set up a `NODE_BIRTH_DATE` in a `.env` or `.env.local` file
 - Run `npm run dev`
 - Open [http://localhost:3000](http://localhost:3000) to view it in the browser
 - :sparkles: :sparkles: :sparkles:
