@@ -1,26 +1,34 @@
-# ME
+# ME 
 
-This is the repository for my future website. 
+This is the repository for my website. 
 
-The different projects and a little presentation of me will be available here.
+The different projects I made and a little presentation of me will be available here.
 
 ## Stack
 
 - React
 - Typescript
 - Material UI
+- Firebase to host
 
-## Available Scripts
+## How to run locally
 
-In the project directory, you can run:
+- Set up a `NODE_BIRTH_DATE` in a `.env` or `.env.local`
+- Run `npm run dev`
+- Open [http://localhost:3000](http://localhost:3000) to view it in the browser
+- :sparkles: :sparkles: :sparkles:
 
-### `npm start`
+## How to deploy
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Run `npm build`
+- Install firebase CLI if not done yet by running `npm install -g firebase-tools`
+- Deploy with `firebase deploy`
+- :rocket: :rocket: rocket:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+
+## Misc
+
+Some more intel.
 
 ### Project's photos
 
