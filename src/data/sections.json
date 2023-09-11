@@ -61,8 +61,9 @@
         "data": {
           "name": "Consultant - Full stack developer, Acensi Canada",
           "city": "Montréal, Québec, Canada",
-          "description": "Full stack developer as a consultant for Acensi Canada. My current mission is at Desjardins, working as a backend engineer.",
-          "startingDate": "Since November 2022"
+          "description": "Full stack developer as a consultant for Acensi Canada. My mission was at Desjardins, working as a backend engineer.",
+          "startingDate": "November 2022",
+          "endDate": "September 2023"
         }
       },
       {
@@ -70,8 +71,9 @@
         "data": {
           "name": "Backend developer, Desjardins",
           "city": "Montréal, Québec, Canada",
-          "description": "Backend developer at Desjardins, working as a consultant for Acensi Canada. I am working on the modernisation of the “Prise de Rendez Vous” service, allowing clients or employees to make an appointment with an advisor",
-          "startingDate": "Since November 2022",
+          "description": "Backend developer at Desjardins, working as a consultant for Acensi Canada. I worked on the modernisation of the “Prise de Rendez Vous” service, allowing clients or employees to make an appointment with an advisor",
+          "startingDate": "November 2022",
+          "endDate": "September 2023",
           "details": [
             "Worked on a batch service extracting appointment data in order to make some intel for the financial service",
             "Worked on the APIs creating the appointments",

@@ -34,12 +34,11 @@ export default function HomePage() {
     return (
         <Page title={"Who am I ?"} subtitle={"Curious and eager to learn, always !"}>
             <Typography variant={"body1"} className={classes.text}>
-                I'm a French IT passionate of <span className={classes.color}>{moment().diff(process.env.REACT_APP_BIRTH_DATE, "years")}</span> years old.
+                I am a French IT passionate of <span className={classes.color}>{moment().diff(moment(process.env.REACT_APP_BIRTH_DATE, "YYYYMMDD"), "years")}</span> years old.
                 </Typography>
                 <Typography variant={"body1"} className={classes.text}>
-                Currently living in Montréal, Québec, Canada, I am working as a Consultant for Acensi Canada. 
-                My current mission is Desjardins, a major financial service cooperative in Québec. 
-                I am working for them as a Backend developer.
+                I worked for 4 years as a Full Stack Developer, three years in France and one in Canada.
+                I am currently looking for new challenges in a major city in Europe, such as Paris, London or Rotterdam.
             </Typography>
             <br/>
             <Typography variant={"body1"} className={classes.text}>
@@ -47,11 +46,11 @@ export default function HomePage() {
                 Lille, in France.
             </Typography>
             <Typography variant={"body1"} className={classes.text}>
-                I really like to code, but I also like to model and analyze a project before doing it, in order to be the most efficient as possible when coding.
+                I really like to code, but I also like to model and analyze a project before doing it, in order to be as most efficient as possible when coding.
             </Typography>
             <br />
             <Typography variant={"body1"} className={classes.text}>
-                If you're interested in my profile, feel free to contact me!
+                If you are interested in my profile, feel free to contact me!
                 Send me a <span className={classes.link} onClick={(e) => openUrl(GMAIL_URL)}>mail</span>, or contact me via <span className={classes.link} onClick={(e) => openUrl(LINKEDIN_URL)}>LinkedIn</span>.
             </Typography>
             <Border />
